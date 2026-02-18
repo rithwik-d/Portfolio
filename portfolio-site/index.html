@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website of Rithwik Reddy Donthi Reddy, Computer Science graduate student at the University of Oklahoma."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rithwik Reddy | Portfolio</title>
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <div class="bg-layer" aria-hidden="true">
+      <span class="blob blob-one"></span>
+      <span class="blob blob-two"></span>
+      <span class="blob blob-three"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <header class="site-header">
+      <nav class="container nav-wrap">
+        <a class="brand" href="#home">RR</a>
+        <div class="nav-actions">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+            Dark mode
+          </button>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Computer Science Graduate Student</p>
+            <h1>
+              Rithwik Reddy
+              <span>Donthi Reddy</span>
+            </h1>
+            <p class="role-line">
+              <span id="role-text">MS Computer Science @ University of Oklahoma</span>
+              <span class="caret" aria-hidden="true">|</span>
+            </p>
+            <p class="lead">
+              I build practical software with strong fundamentals in full-stack development, AI/ML, and database systems. I focus on clean execution, measurable impact, and products that scale.
+            </p>
+            <div class="cta-group">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="assets/Rithwik-Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
+            <ul class="hero-contact">
+              <li>Norman, Oklahoma</li>
+              <li><a href="mailto:rithwik6196@gmail.com">rithwik6196@gmail.com</a></li>
+              <li><a href="tel:+14056180095">+1 (405) 618-0095</a></li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel reveal delay-1">
+            <h2>Snapshot</h2>
+            <div class="stats-grid">
+              <article class="stat-card">
+                <p class="count" data-target="2">0</p>
+                <p>CS Degrees</p>
+              </article>
+              <article class="stat-card">
+                <p class="count" data-target="3">0</p>
+                <p>Core Projects</p>
+              </article>
+              <article class="stat-card">
+                <p class="count" data-target="84" data-divisor="10" data-suffix="/10">0</p>
+                <p>B.S GPA (8.4/10)</p>
+              </article>
+              <article class="stat-card">
+                <p class="count" data-target="36" data-divisor="10" data-suffix="/4">0</p>
+                <p>M.S GPA (3.6/4)</p>
+              </article>
+            </div>
+            <div class="focus-tags">
+              <span>Software Engineering</span>
+              <span>AI & ML</span>
+              <span>Databases</span>
+              <span>Web Development</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">About</p>
+            <h2>Education and Technical Foundation</h2>
+          </div>
+          <div class="timeline reveal delay-1">
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <h3>University of Oklahoma</h3>
+                <p class="timeline-meta">M.S. in Computer Science | Aug 2024 - May 2026 | GPA: 3.6/4</p>
+                <p>Graduate-level training in computer science with focus on building production-ready systems and problem solving at scale.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <h3>VNR VJIET</h3>
+                <p class="timeline-meta">B.S. in Computer Science | Apr 2020 - Mar 2024 | GPA: 8.4/10</p>
+                <p>Built a strong base in software engineering, data structures, system design fundamentals, and collaborative development workflows.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Tech Stack</p>
+            <h2>Tools I Use To Ship Reliable Software</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Languages</h3>
+              <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal delay-1">
+              <h3>Frameworks & Domains</h3>
+              <ul>
+                <li>ReactJS</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>SDLC</li>
+                <li>Software Engineering</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal delay-2">
+              <h3>Software Tools</h3>
+              <ul>
+                <li>Azure</li>
+                <li>Microsoft SQL Server</li>
+                <li>Xcode</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Projects</p>
+            <h2>Selected Work</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal tilt-card">
+              <p class="project-kicker">Full-Stack Platform</p>
+              <h3>Internship Project Management System</h3>
+              <p>
+                Designed and developed a web platform to streamline internship project allocation, tracking, and evaluation with modules for registration, submissions, mentor assignment, and progress reporting.
+              </p>
+              <a href="https://github.com/rithwik/IPMS" target="_blank" rel="noreferrer">View Repository</a>
+            </article>
+
+            <article class="project-card reveal delay-1 tilt-card">
+              <p class="project-kicker">Computer Vision</p>
+              <h3>Helmet and Number Plate Detection</h3>
+              <p>
+                Built a real-time detection workflow using YOLOv5 to identify helmet violations and extract vehicle number plate information for automated monitoring.
+              </p>
+              <a href="https://github.com/rithwik-d/Detect" target="_blank" rel="noreferrer">View Repository</a>
+            </article>
+
+            <article class="project-card reveal delay-2 tilt-card">
+              <p class="project-kicker">Database System</p>
+              <h3>Patient Assistant Network Database</h3>
+              <p>
+                Designed and implemented a relational database for patients, donors, volunteers, employees, and teams with schema design, indexing, and SQL workflows for efficient retrieval.
+              </p>
+              <span class="repo-muted">Built with ER modeling and SQL engineering</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="leadership" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Leadership</p>
+            <h2>Extracurricular Impact</h2>
+          </div>
+          <div class="leadership-grid">
+            <article class="lead-card reveal">
+              <h3>Krithomedh</h3>
+              <p class="timeline-meta">Founding Member and Social Media Head</p>
+              <p>Helped establish and grow the community, led outreach campaigns, and coordinated technical events to drive participation and visibility.</p>
+            </article>
+            <article class="lead-card reveal delay-1">
+              <h3>VJTEATRO - Short Film Club</h3>
+              <p class="timeline-meta">Director and Screenwriter</p>
+              <p>Collaborated on short-film production, scriptwriting, and direction, building creativity, planning discipline, and team execution skills.</p>
+            </article>
+            <article class="lead-card reveal delay-2">
+              <h3>National Social Service (NSS)</h3>
+              <p class="timeline-meta">Volunteer Leadership</p>
+              <p>Organized blood donation and blanket distribution drives while coordinating volunteers and local partners for community impact.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container reveal">
+          <div class="contact-card">
+            <p class="section-label">Contact</p>
+            <h2>Let's Build Something Exceptional</h2>
+            <p>
+              I am open to software engineering opportunities where I can contribute to high-impact products and grow with strong engineering teams.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:rithwik6196@gmail.com">Email Me</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/rithwik-reddyd" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn btn-secondary" href="https://github.com/rithwik-d" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>(c) <span id="year"></span> Rithwik Reddy Donthi Reddy</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

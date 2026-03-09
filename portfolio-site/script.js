@@ -118,10 +118,9 @@ animateRoleText();
 const revealElements = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll(".count");
 
-function formatCounterValue(rawValue, divisor, suffix) {
+function formatCounterValue(rawValue, divisor, suffix, decimals) {
   const value = rawValue / divisor;
-  const isDecimal = divisor !== 1;
-  const formatted = isDecimal ? value.toFixed(1) : Math.round(value).toString();
+  const formatted = decimals > 0 ? value.toFixed(decimals) : Math.round(value).toString();
   return `${formatted}${suffix}`;
 }
 
@@ -133,6 +132,7 @@ function runCounter(counter) {
   const target = Number(counter.dataset.target || 0);
   const divisor = Number(counter.dataset.divisor || 1);
   const suffix = counter.dataset.suffix || "";
+  const decimals = Number(counter.dataset.decimals || (divisor !== 1 ? 1 : 0));
   const start = performance.now();
   const duration = 1200;
 
@@ -143,12 +143,12 @@ function runCounter(counter) {
     const eased = 1 - Math.pow(1 - progress, 3);
     const currentValue = target * eased;
 
-    counter.textContent = formatCounterValue(currentValue, divisor, suffix);
+    counter.textContent = formatCounterValue(currentValue, divisor, suffix, decimals);
 
     if (progress < 1) {
       requestAnimationFrame(step);
     } else {
-      counter.textContent = formatCounterValue(target, divisor, suffix);
+      counter.textContent = formatCounterValue(target, divisor, suffix, decimals);
     }
   }
 

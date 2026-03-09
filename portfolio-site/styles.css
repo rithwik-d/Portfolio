@@ -642,15 +642,30 @@ h1 span {
   color: var(--muted);
 }
 
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.72rem;
+  align-items: center;
+}
+
 .project-card a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
   text-decoration: none;
   font-weight: 700;
   color: var(--project-link);
 }
 
+.project-card a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .repo-muted {
-  display: inline-block;
-  margin-top: 0.2rem;
+  margin-top: 0;
   color: var(--repo-text);
   font-size: 0.88rem;
   font-weight: 700;

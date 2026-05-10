@@ -1,0 +1,42 @@
+# Rithwik Reddy Donthi Reddy
+**Software Engineer | Full-Stack Development | AI/ML**
+Norman, OK | 405-618-0095 | rithwik6196@gmail.com | linkedin.com/in/rithwik-reddyd | github.com/rithwik-d | rithwik-d.github.io/Portfolio/
+
+## Professional Summary
+Computer Science M.S. graduate from the University of Oklahoma with hands-on full-stack software engineering and AI/ML project experience. Built and deployed applications using React, Node.js, Express.js, PostgreSQL, MongoDB, authentication, REST APIs, CI/CD, and cloud hosting.
+
+## Technical Skills
+- Languages: JavaScript, Python, C++, HTML5, CSS3, SQL
+- Frontend: React, React Router, EJS, Bootstrap, jQuery, Responsive Design
+- Backend: Node.js, Express.js, REST APIs, Authentication, Sessions, bcrypt, Nodemailer
+- Databases: PostgreSQL, MongoDB, Mongoose, Microsoft SQL Server
+- AI/ML: Machine Learning, Computer Vision, YOLOv5, PyTorch, OpenCV, NumPy, Pandas, scikit-learn, TensorBoard
+- Cloud/Tools: Google Cloud Run, Cloud SQL, Vercel, GitHub Pages, GitHub Actions, Git, Postman, VS Code, Figma, Azure
+
+## Education
+University of Oklahoma, Norman, OK | M.S. in Computer Science | GPA: 3.67/4.0 | May 2026
+VNR VJIET, Hyderabad, India | B.S. in Computer Science | GPA: 8.4/10 | Mar 2024
+
+## Projects
+
+**Inkline Journal - Full-Stack Blogging Platform | Node.js, Express.js, EJS, PostgreSQL, bcrypt, Nodemailer**
+Live: https://www.inklinejournal.com | GitHub: github.com/rithwik-d/inkline-journal
+- Built and deployed a multi-user blogging platform with public feed, signup/login, author dashboard, and post ownership controls.
+- Implemented authentication with bcrypt password hashing, express-session, one-time email verification tokens, verified-only sign-in, and SMTP email delivery.
+- Designed PostgreSQL persistence with users, posts, verification tokens, indexed queries, and full CRUD workflows for publish, unpublish, edit, and delete actions.
+- Configured production deployment with custom domain/SSL, cloud database settings, and environment-driven application configuration.
+
+**IPMS - MERN Application | React, React Router, Node.js, Express.js, MongoDB, Mongoose, Axios, GitHub Actions**
+GitHub: github.com/rithwik-d/IPMS
+- Developed a full-stack app with React client, Express REST API, MongoDB/Mongoose models, CORS, and environment-based configuration.
+- Built user creation and email routes with JSON APIs, Nodemailer service layer, and Axios-driven client/server communication.
+- Added GitHub Actions CI workflow using Node.js 18 and MongoDB service container to install dependencies and validate React production builds.
+
+**Helmet and License Plate Detection - Computer Vision | Python, YOLOv5, PyTorch, OpenCV, Pandas**
+GitHub: github.com/rithwik-d/helmet-and-licence-plate-detection
+- Trained a YOLOv5 object detection model to identify helmet usage and license plates in rider images/videos.
+- Built detection workflow to flag non-helmet riders, crop license plates, save plate text/images, and log results with timestamps to CSV.
+- Used PyTorch, OpenCV, NumPy, Pandas, TensorBoard, and model-export tooling to support training, detection, and result analysis.
+
+## Leadership
+Founding Member and Social Media Head, Krithomedh | Helped launch a technical community and led outreach for events/workshops, strengthening collaboration, event planning, and communication.
